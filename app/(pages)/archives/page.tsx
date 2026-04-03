@@ -1,4 +1,5 @@
 import React from "react";
+import { H1 } from "@/app/components/Headers";
 
 export const metadata = {
   title: "Archives | SEL",
@@ -17,9 +18,7 @@ export default function Archives() {
   return (
     <main className="flex min-h-screen flex-col text-gray-800 ">
       <div className="flex justify-center pt-8 pb-6">
-        <div className="text-baseText text-center text-6xl font-bold px-8 py-4 rounded-xl w-full max-w-screen-lg mx-6 slab">
-          Archives
-        </div>
+        <H1>Archives</H1>
       </div>
       <div className="flex items-center justify-center py-16 ">
         <div className="max-w-screen-lg w-full px-4 md:px-0">

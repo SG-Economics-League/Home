@@ -2,6 +2,20 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Button from "./Button";
+
+
+function NavbarItem({ href, children, onClick, className }: { href: string; children: React.ReactNode; onClick?: () => void; className?: string }) {
+  return (
+    <Link
+      href={href}
+      onClick={onClick}
+      className={`text-lg px-3 py-1 rounded-md transition-colors duration-200 hover:bg-white/20${className ? ` ${className}` : ""}`}
+    >
+      {children}
+    </Link>
+  );
+}
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +23,8 @@ export default function Navbar() {
   return (
     <header
       className="
+        fixed top-0
+        z-50
         w-full
         bg-baseText
         text-sm
@@ -18,60 +34,20 @@ export default function Navbar() {
             linear-gradient(to_right,#ddd_1px,transparent_1px)]
       "
     >
-      <nav className="w-full md:max-w-screen-lg md:mx-auto py-6 flex items-center justify-between px-4 md:px-0">
+      <nav className="w-full md:max-w-screen-lg md:mx-auto py-2 flex items-center justify-between px-4 md:px-0">
         <Link href="/" aria-label="Go to Home" className="flex items-center">
           <Image src="/logos/navbar.png" alt="Logo" width={240} height={192} />
         </Link>
         <div className="hidden md:flex items-center space-x-6 font-medium">
-          <Link
-            href="/rules"
-            className="text-lg px-3 py-1 rounded-md transition-colors duration-200 hover:bg-white/20"
-          >
-            Rules
-          </Link>
-          <Link
-            href="/faq"
-            className="text-lg px-3 py-1 rounded-md transition-colors duration-200 hover:bg-white/20"
-          >
-            FAQ
-          </Link>
-          <Link
-            href="/syllabus"
-            className="text-lg px-3 py-1 rounded-md transition-colors duration-200 hover:bg-white/20"
-          >
-            Syllabus
-          </Link>
-          <Link
-            href="https://www.dropbox.com/scl/fi/cymwur1t7gjxklzzapc3v/SELanswers.pdf?rlkey=ycu1ul9xs5t6dww13h8jfsvse&st=6akznf1h&dl=0"
-            onClick={() => setIsOpen(false)}
-            className="text-xl px-3 py-1 rounded-md transition-colors duration-200 hover:bg-[#ffffff]/40"
-          >
-            2025 Solutions
-          </Link>
-          <a
-            href="https://contest.sgeconsleague.org/login"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="
-              group
-              px-4
-              py-2
-              bg-white
-              text-secondary
-              text-lg
-              font-semibold
-              rounded-2xl
-              shadow
-              border-2
-              border-b-4
-              border-secondary
-              transition-all
-              duration-200
-              hover:scale-105
-            "
-          >
-            Sign in
-          </a>
+          <NavbarItem href="/rules">Rules</NavbarItem>
+          <NavbarItem href="/faq">FAQ</NavbarItem>
+          <NavbarItem href="/syllabus">Syllabus</NavbarItem>
+          <NavbarItem href="/practise">
+            Practise
+          </NavbarItem>
+          <Button>
+            Register Now!
+          </Button>
         </div>
         <button
           onClick={() => setIsOpen(true)}
@@ -130,67 +106,14 @@ export default function Navbar() {
           </svg>
         </button>
         <div className="flex flex-col items-start px-6 space-y-6 mt-4 text-[#273a30] slab font-semibold">
-          <Link
-            href="/"
-            onClick={() => setIsOpen(false)}
-            className="text-xl px-3 py-1 rounded-md transition-colors duration-200 hover:bg-[#ffffff]/40"
-          >
-            Home
-          </Link>
-          <Link
-            href="/rules"
-            onClick={() => setIsOpen(false)}
-            className="text-xl px-3 py-1 rounded-md transition-colors duration-200 hover:bg-[#ffffff]/40"
-          >
-            Rules
-          </Link>
-          <Link
-            href="/faq"
-            onClick={() => setIsOpen(false)}
-            className="text-xl px-3 py-1 rounded-md transition-colors duration-200 hover:bg-[#ffffff]/40"
-          >
-            FAQ
-          </Link>
-          <Link
-            href="/syllabus"
-            onClick={() => setIsOpen(false)}
-            className="text-xl px-3 py-1 rounded-md transition-colors duration-200 hover:bg-[#ffffff]/40"
-          >
-            Syllabus
-          </Link>
-          <Link
-            href="https://www.dropbox.com/scl/fi/cymwur1t7gjxklzzapc3v/SELanswers.pdf?rlkey=ycu1ul9xs5t6dww13h8jfsvse&st=6akznf1h&dl=0"
-            onClick={() => setIsOpen(false)}
-            className="text-xl px-3 py-1 rounded-md transition-colors duration-200 hover:bg-[#ffffff]/40"
-          >
+          <NavbarItem href="/" onClick={() => setIsOpen(false)} className="text-xl">Home</NavbarItem>
+          <NavbarItem href="/rules" onClick={() => setIsOpen(false)} className="text-xl">Rules</NavbarItem>
+          <NavbarItem href="/faq" onClick={() => setIsOpen(false)} className="text-xl">FAQ</NavbarItem>
+          <NavbarItem href="/syllabus" onClick={() => setIsOpen(false)} className="text-xl">Syllabus</NavbarItem>
+          <NavbarItem href="/practise" 
+          onClick={() => setIsOpen(false)} className="text-xl">
             2025 Solutions
-          </Link>
-          
-          <a
-            href="https://contest.sgeconsleague.org/login"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-            className="
-              group
-              mt-4
-              px-4
-              py-2
-              bg-white
-              text-[#5a96d9]
-              font-semibold
-              rounded-2xl
-              shadow
-              border-2
-              border-b-4
-              border-[#5a96d9]
-              transition-all
-              duration-200
-              hover:scale-105
-            "
-          >
-            Sign in
-          </a>
+          </NavbarItem>
 
         </div>
       </div>

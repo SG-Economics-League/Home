@@ -1,4 +1,5 @@
 import React from "react";
+import { H1, H2 } from "@/app/components/Headers";
 
 export const metadata = {
   title: "Syllabus | Singapore Economics League",
@@ -8,12 +9,10 @@ export default function SyllabusPage() {
   return (
     <div className="w-full text-baseText">
       <div className="flex justify-center pt-8 pb-6">
-        <div className="text-baseText text-center text-6xl font-bold px-8 py-4 rounded-xl w-full max-w-screen-lg mx-auto slab">
-          Syllabus
-        </div>
+        <H1>Syllabus</H1>
       </div>
       <div className="max-w-screen-lg mx-auto mt-16 px-4 md:px-0">
-        <h2 className="text-2xl font-semibold mb-2 text-primary slab">Content</h2>
+        <H2 className="mb-2">Content</H2>
         <p className="mb-4">
           The content tested in SEL can be classified according to 5 broad
           topics, namely:
@@ -41,7 +40,7 @@ export default function SyllabusPage() {
           syllabus, some harder questions can sometimes delve into topics
           covered at the university level.
         </p>
-        <h2 className="text-2xl font-semibold mb-2 text-primary slab">Mathematical Methods</h2>
+        <H2 className="mb-2">Mathematical Methods</H2>
         <p className="mb-4">
           Some of the economics questions set in SEL will be highly rigorous and
           analytical in their approach. Therefore, we encourage teams to
@@ -60,7 +59,7 @@ export default function SyllabusPage() {
           <li>Sequences and Series</li>
           <li>Geometry</li>
         </ul>
-        <h2 className="text-2xl font-semibold mb-2 text-primary slab">How To Prepare</h2>
+        <H2 className="mb-2">How To Prepare</H2>
         <p className="mb-4">
           While SEL questions range in difficulty, a majority of our problems
           are solvable via the application of concepts taught at the JC level.

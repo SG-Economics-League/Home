@@ -1,4 +1,5 @@
 "use client";
+import { H1, H2, H3 } from "@/app/components/Headers";
 import React, { useEffect, useState } from "react";
 
 const sectionIds = [
@@ -17,10 +18,10 @@ interface SubHeadingProps {
   className?: string;
 }
 function SubHeading({ children, className }: SubHeadingProps) {
-  return <h2 className={`${className} text-xl text-primary font-bold`}>{children}</h2>;
+  return <H2 className={className}>{children}</H2>;
 }
 function SubHeading2({ children, className }: SubHeadingProps) {
-  return <h3 className={`${className} text-lg font-bold`}>{children}</h3>;
+  return <H3 className={className}>{children}</H3>;
 }
 
 function UnorderedList({ items }: { items: (string | (string | string[])[])[] }) {
@@ -848,11 +849,9 @@ export default function RulesPage() {
           overflow-x: hidden;
         }
       `}</style>
-      <div className="flex justify-center pt-8 pb-6">
-        <div className="text-baseText text-center text-6xl font-bold py-4 rounded-xl w-full max-w-screen-lg mx-6 slab">
-          Rules
-        </div>
-      </div>
+      <H1>
+        Rules
+      </H1>
       <MobileContents />
       <div className="flex justify-center mb-10">
         <div className="max-w-screen-lg w-full flex flex-col lg:flex-row px-4 md:px-0">

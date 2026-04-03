@@ -43,6 +43,8 @@ export default function RootLayout({
           ${robotoSerif.variable}
           ${robotoSlab.variable}
           antialiased
+          mt-12
+          bg-[#fbfafb]
         `}
       >
         <Navbar />

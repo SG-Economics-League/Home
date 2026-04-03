@@ -1,5 +1,6 @@
 import React from "react";
 import FaqBox from "../../components/FaqBox";
+import { H1, H2 } from "@/app/components/Headers";
 
 export const metadata = {
   title: "FAQ | Singapore Economics League",
@@ -10,9 +11,7 @@ export default function Faq() {
     <>
       <section className="w-full text-baseText">
         <div className="flex justify-center pt-8 pb-6">
-          <div className="text-baseText text-center text-6xl font-bold px-8 py-4 rounded-xl w-full max-w-md mx-auto slab">
-            FAQs
-          </div>
+          <H1>FAQs</H1>
         </div>
         <div className="max-w-screen-lg mx-auto mt-16 px-4 md:px-0">
           <div className="space-y-6 text-lg">
@@ -65,9 +64,9 @@ export default function Faq() {
       </section>
       <section className="w-full py-8">
         <div className="max-w-screen-lg mx-auto text-left px-4 md:px-0">
-          <h3 className="text-3xl sm:text-4xl font-bold text-black slab mb-4 mt-4">
+          <H2 className="text-3xl sm:text-4xl mb-4 mt-4">
             Still have questions?
-          </h3>
+          </H2>
           <p className="text-lg text-gray-700">
             Drop us an email at{" "}
             <a
