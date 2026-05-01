@@ -1,88 +1,111 @@
 interface TeamMember {
     name: string;
-    roles: string[];
-    link: string;
-    image: string | null;
+    role: string;
+    photo: string | null;
+    socials: string | null;
+    quote: string | null;
 }
 const teamMembers: TeamMember[] = [
-    {
-      name: "Ho Jon Yew",
-      roles: ["Chief Organiser"],
-      link: "https://www.linkedin.com/in/jon-yew-ho/",
-      image: "/team-pics/jonyew-ho.png",
-    },
-    {
-      name: "Li Zonglun",
-      roles: ["Head of Academics"],
-      link: "https://www.linkedin.com/in/zonglun-li-80970a276",
-      image: "/team-pics/li-zonglun.png",
-    },
-    {
-      name: "Chua Zhong Ding",
-      roles: ["Lead Software Engineer"],
-      link: "https://www.linkedin.com/in/chua-zhong-ding-94412728b",
-      image: "/team-pics/chua-zhong-ding.png",
-    },
-    {
-      name: "Lucas Lee",
-      roles: ["Head of Operations", "Head of Outreach"],
-      link: "https://www.linkedin.com/in/lucas-lee-zy ",
-      image: "/team-pics/lucas-lee.png",
-    },
-    {
-      name: "Zhao Yuxuan",
-      roles: ["Academics Consultant"],
-      link: "https://www.linkedin.com/in/yuxuan-zhao-a44789338",
-      image: "/team-pics/zhao-yuxuan.png",
-    },
-    {
-      name: "Jonas Lim",
-      roles: ["Problem Setter"],
-      link: "https://www.linkedin.com/in/jonas-lim-489a05330",
-      image: "/team-pics/jonas-lim.png",
-    },
-    {
-      name: "Fan Yixiang",
-      roles: ["Problem Setter"],
-      link: "https://www.linkedin.com/in/yixiang-fan-38700a352",
-      image: "/team-pics/fan-yixiang.png",
-    },
-    {
-      name: "Theodore Chou",
-      roles: ["Problem Setter"],
-      link: "https://www.linkedin.com/in/theodore-chou-sales-marketing-entrepreneurship-economics",
-      image: "/team-pics/theodore-chou.png",
-    },
-    {
-      name: "Jeffrey Lee",
-      roles: ["Software Engineer"],
-      link: "https://www.linkedin.com/in/jeffrey-lee-8a9461236",
-      image: "/team-pics/jeffrey-lee.png",
-    },
-    {
-      name: "Chew Jin Hao",
-      roles: ["Software Engineer"],
-      link: "http://www.linkedin.com/in/chew-jin-hao-274850196",
-      image: null,
-    },
-    {
-      name: "Dylan Saga",
-      roles: ["SWE (Data analytics & automation)"],
-      link: "https://www.linkedin.com/in/dylan-saga-551430273",
-      image: "/team-pics/dylan-saga.png",
-    },
-    {
-      name: "Raeanne Zou",
-      roles: ["Graphic Illustrator"],
-      link: "https://www.linkedin.com/in/raeanne-zou/",
-      image: null,
-    },
-    {
-      name: "Javier Yap",
-      roles: ["Operations"],
-      link: "https://www.linkedin.com/in/javieryap/",
-      image: null,
-    },
-  ];
+  {
+    "name": "Yeo Yi Shan",
+    "role": "Deputy Chief Organiser",
+    "photo": "yeo-yi-shan.jpeg",
+    "socials": "www.linkedin.com/in/yeo-yi-shan-aa697a278",
+    "quote": "im lovin' it"
+  },
+  {
+    "name": "Hayden Tan",
+    "role": "Head of Events",
+    "photo": "hayden-tan.jpg",
+    "socials": "https://www.instagram.com/sleepyaxion?igsh=MWV4M2l5cHZ1N3Zmbw==",
+    "quote": "i almost fell down that mountain"
+    
+  },
+  {
+    "name": "Theshyan Thirun",
+    "role": "Events IC",
+    "photo": "theshyan-thirun.jpeg",
+    "socials": "https://www.linkedin.com/in/theshyan-thirun-813ab0243?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    "quote": "why did ntuc tie all its goods in rubber bands? to make them income inelastic"
+  },
+  {
+    "name": "Matilda Laq",
+    "role": "Events IC",
+    "photo": "matilda-laq.jpeg",
+    "socials": "https://www.instagram.com/matildaonbread?igsh=MTRqczlyeDg3dnBkeg%3D%3D&utm_source=qr",
+    "quote": "J2 HELM Student"
+  },
+  {
+    "name": "Trista Tanary",
+    "role": "Events IC",
+    "photo": null,
+    "socials": "https://www.linkedin.com/in/trista-tanary-294b4a3a2/",
+    "quote": "live laugh love"
+  },
+  {
+    "name": "Toh jo-lynne",
+    "role": "Events IC",
+    "photo": "toh-jo-lynne.jpeg",
+    "socials": "www.linkedin.com/in/jolynne-toh-747229356",
+    "quote": "Stay hungry, stay foolish"
+  },
+  {
+    "name":"Zeng TaoJinHao ",
+    "role": "Events IC",
+    "photo": "zeng-taojinhao.jpg",
+    "socials":"https://www.linkedin.com/in/zeng-taojinhao-a36381218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "quote":"Be wise, move on"
+  },
+  {
+    "name": "Fang Yuyue",
+    "role": "Chief Academic Officer",
+    "photo": "fang-yuyue.jpeg",
+    "socials": "www.linkedin.com/in/fang-yuyue",
+    "quote": "Hi!"
+  },
+  {
+    "name": "Dhruv Aggarwal",
+    "role": "Academic Consultant",
+    "photo": "dhruv-aggarwal.jpeg",
+    "socials": "www.linkedin.com/in/dhruv-aggarwal-finance",
+    "quote": "Chase the impossible"
+  },
+  {
+    "name": "Guo Shuhan",
+    "role": "Lead Problem Setter",
+    "photo": null,
+    "socials": "http://linkedin.com/in/shuhan-guo-b34814280",
+    "quote": "Why can’t I just print money"
+  },
+  {
+    "name": "Qian Zhe Chong",
+    "role": "Lead Problem Setter",
+    "photo": null,
+    "socials": "https://www.linkedin.com/in/qian-chong-3a3410265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "quote": "Take strategies, not sentiments"
+  },
+  {
+    "name": "Royce Goh",
+    "role": "Lead Problem Setter",
+    "photo": null,
+    "socials": null,
+    "quote": null
+  },
+  {
+    "name": "Wee Chuan Jie",
+    "role": "Problem Setter",
+    "photo": null,
+    "socials": "https://www.instagram.com/wheats_wheatz/",
+    "quote": "Live life without regrets"
+  },
+  {
+    "name": "Chua Zhong Ding",
+    "role": "Lead Software Developer",
+    "photo": "chua-zhong-ding.png",
+    "socials": "www.linkedin.com/in/chua-zhong-ding",
+    "quote": "unpaid intern"
+  }
+]
 
 export default teamMembers;
+export type { TeamMember };

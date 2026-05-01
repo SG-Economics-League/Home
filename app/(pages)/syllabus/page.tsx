@@ -1,5 +1,7 @@
 import React from "react";
 import { H1, H2 } from "@/app/components/Headers";
+import Button from "@/app/components/Button";
+import Link from "next/link";
 
 export const metadata = {
   title: "Syllabus | Singapore Economics League",
@@ -63,38 +65,11 @@ export default function SyllabusPage() {
         <p className="mb-4">
           While SEL questions range in difficulty, a majority of our problems
           are solvable via the application of concepts taught at the JC level.
-          The SEL Academics Team thus recommends the following learning
-          resources for preparation:
+          The SEL Academics Team thus recommends visiting the following page and attempt last year{"'"}s SEL question:
         </p>
-        <ul className="list-disc list-inside mb-6 space-y-1 ml-4">
-          <li>A Level and IB lecture notes on Economics</li>
-          <li>
-            <a
-              href="https://www.core-econ.org/"
-              className="underline text-secondary font-bold font-medium"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Core Econ
-            </a>
-            , the recommended online textbook for students competing in the IEO
-          </li>
-          <li>
-            <a
-              href="https://ieo-official.org/prepare#syllabus"
-              className="underline text-secondary font-bold font-medium"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Past year papers
-            </a>{" "}
-            of the IEO
-          </li>
-          <li>
-            Undergraduate textbooks, such as Principles of Economics by
-            N. Gregory Mankiw
-          </li>
-        </ul>
+        <Button variant="secondary" href="/practise" className="mb  -4">
+          View Sample Questions &rarr;
+        </Button>
         <p className="font-semibold">Good luck!</p>
       </div>
     </div>

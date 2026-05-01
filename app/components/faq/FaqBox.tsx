@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 interface FaqProps {
   question: string;
-  answer: string;
+  answer: React.ReactNode | string;
 }
 
 export default function FaqBox({ question, answer }: FaqProps): JSX.Element {

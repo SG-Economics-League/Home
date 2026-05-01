@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CountDown from "../CountDown";
 import GradientText from "../GradientText";
+import { H2L, H2M } from "../Headers";
 import { REGISTRATION_CLOSE } from "@/app/data/eventDatetimes";
 function calculateTimeLeft(EVENT_TIME: number) {
   const now = new Date().getTime();
@@ -18,12 +19,12 @@ function calculateTimeLeft(EVENT_TIME: number) {
 
 export default function RegistrationCloseSection() {
     const [timeLeft, _] = useState(calculateTimeLeft(REGISTRATION_CLOSE));
-    return (<section className="flex items-center justify-center mb-16 px-4 md:px-0">
+    return (<section className="flex items-center justify-center py-16 px-4 md:px-0">
               <div className="max-w-screen-lg w-full ">
                 
-                <h2 className="text-center text-6xl sm:text-8xl font-bold text-black mt-24 slab">
-                  Let's <GradientText from="from-[#7f9fd8]" to="to-[#5073b1]"> Roll </GradientText>
-                </h2>
+                <H2M>
+                  Let{"'"}s <GradientText from="from-[#7f9fd8]" to="to-[#5073b1]"> Roll </GradientText>
+                </H2M>
                 <div className="border-2 border-primary bg-white rounded-xl p-8 sm:p-10 text-center">
     
                   <div className="flex sm:flex-row items-center justify-center gap-0 sm:gap-6">

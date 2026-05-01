@@ -1,7 +1,10 @@
 import Image from "next/image";
+import { H2M } from "../Headers";
+import GradientText from "../GradientText";
+import { DISCORD_LINK } from "@/app/data/links";
 
-export default function SocialSection() {
-    return <section className="flex items-center justify-center mt-24 px-4 md:px-0">
+export default function CallToAction() {
+    return <section className="flex items-center justify-center py-16 px-4 md:px-0">
         <div className="max-w-screen-lg w-full">
           <div className="flex flex-col gap-6">
             <div
@@ -55,14 +58,14 @@ export default function SocialSection() {
                   mr-4
                 "
               />
-              <h3 className="text-4xl font-medium slab text-baseText mt-6">
-                Join our Community
-              </h3>
+              <H2M>
+                Join the{" "}<GradientText from="from-[#7f9fd8]" to="to-[#5073b1]" > SEL </GradientText> Community!
+              </H2M>
               <p className="text-baseText mt-6 max-w-lg">
                 Ask questions, make friends, and form teams. Good vibes only!
               </p>
               <a
-                href="https://discord.gg/fcYDumMpx7"
+                href={DISCORD_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="

@@ -3,6 +3,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "./Button";
+import { twMerge } from "tailwind-merge";
+import MenuIcon from "./icons/MenuIcon";
+import CrossIcon from "./icons/CrossIcon";
+import navigationPages from "../data/navigationPages";
 
 
 function NavbarItem({ href, children, onClick, className }: { href: string; children: React.ReactNode; onClick?: () => void; className?: string }) {
@@ -10,7 +14,7 @@ function NavbarItem({ href, children, onClick, className }: { href: string; chil
     <Link
       href={href}
       onClick={onClick}
-      className={`text-lg px-3 py-1 rounded-md transition-colors duration-200 hover:bg-white/20${className ? ` ${className}` : ""}`}
+      className={twMerge("text-lg px-3 py-1 rounded-md transition-colors duration-200 hover:bg-white/20", className)}
     >
       {children}
     </Link>
@@ -39,12 +43,11 @@ export default function Navbar() {
           <Image src="/logos/navbar.png" alt="Logo" width={240} height={192} />
         </Link>
         <div className="hidden md:flex items-center space-x-6 font-medium">
-          <NavbarItem href="/rules">Rules</NavbarItem>
-          <NavbarItem href="/faq">FAQ</NavbarItem>
-          <NavbarItem href="/syllabus">Syllabus</NavbarItem>
-          <NavbarItem href="/practise">
-            Practise
-          </NavbarItem>
+          {navigationPages.map(({ name, href }) => (
+            <NavbarItem key={href} href={href}>
+              {name}
+            </NavbarItem>
+          ))}
           <Button>
             Register Now!
           </Button>
@@ -54,23 +57,7 @@ export default function Navbar() {
           className="md:hidden text-white"
           aria-label="Open menu"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 6l16 0" />
-            <path d="M4 12l16 0" />
-            <path d="M4 18l16 0" />
-          </svg>
+          <MenuIcon />
         </button>
       </nav>
       <div
@@ -88,32 +75,17 @@ export default function Navbar() {
           className="p-4 text-[#273a30] text-xl"
           aria-label="Close menu"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="icon icon-tabler icons-tabler-outline icon-tabler-x"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M18 6l-12 12" />
-            <path d="M6 6l12 12" />
-          </svg>
+          <CrossIcon />
         </button>
         <div className="flex flex-col items-start px-6 space-y-6 mt-4 text-[#273a30] slab font-semibold">
-          <NavbarItem href="/" onClick={() => setIsOpen(false)} className="text-xl">Home</NavbarItem>
-          <NavbarItem href="/rules" onClick={() => setIsOpen(false)} className="text-xl">Rules</NavbarItem>
-          <NavbarItem href="/faq" onClick={() => setIsOpen(false)} className="text-xl">FAQ</NavbarItem>
-          <NavbarItem href="/syllabus" onClick={() => setIsOpen(false)} className="text-xl">Syllabus</NavbarItem>
-          <NavbarItem href="/practise" 
-          onClick={() => setIsOpen(false)} className="text-xl">
-            2025 Solutions
-          </NavbarItem>
+          {navigationPages.map(({ name, href }) => (
+            <NavbarItem key={href} href={href} onClick={() => setIsOpen(false)} className="text-xl">
+              {name}
+            </NavbarItem>
+          ))}
+          <Button onClick={() => setIsOpen(false)} className="w-full mt-4">
+            Register Now!
+          </Button>
 
         </div>
       </div>
