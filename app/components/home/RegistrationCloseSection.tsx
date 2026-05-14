@@ -1,7 +1,7 @@
 import { useState } from "react";
 import CountDown from "../CountDown";
 import GradientText from "../GradientText";
-import { H2L, H2M } from "../Headers";
+import { H2M } from "../Headers";
 import { REGISTRATION_CLOSE } from "@/app/data/eventDatetimes";
 function calculateTimeLeft(EVENT_TIME: number) {
   const now = new Date().getTime();

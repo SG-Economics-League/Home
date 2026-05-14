@@ -1,7 +1,5 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Image from "next/image";
-import GradientText from "./components/GradientText";
 import RegistrationCloseSection from "./components/home/RegistrationCloseSection";
 import OrganisingCommitteeSection from "./components/home/OrganisingCommitteeSection";
 import CallToAction from "./components/home/CallToAction";

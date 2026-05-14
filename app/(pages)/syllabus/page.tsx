@@ -1,7 +1,6 @@
 import React from "react";
 import { H1, H2 } from "@/app/components/Headers";
 import Button from "@/app/components/Button";
-import Link from "next/link";
 
 export const metadata = {
   title: "Syllabus | Singapore Economics League",

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { H2L } from "../Headers";
-import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 import Button from "../Button";
 

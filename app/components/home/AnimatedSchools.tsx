@@ -15,9 +15,11 @@ export default function AnimatedInstitutionBackground() {
         <div className="absolute top-0 left-0 h-full flex animate-scroll">
           {/* Original set */}
           {institutionImages.map((img, index) => (
+            // 
             <img
               key={index}
               src={img}
+              alt=""
               className="h-full object-cover min-w-[200px]" // Adjust min-width as needed
             />
           ))}
@@ -26,6 +28,7 @@ export default function AnimatedInstitutionBackground() {
             <img
               key={`dup-${index}`}
               src={img}
+              alt=""
               className="h-full object-cover min-w-[200px]" // Match same sizing
             />
           ))}

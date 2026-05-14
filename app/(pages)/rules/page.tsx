@@ -1,6 +1,6 @@
 "use client";
 import { H1} from "@/app/components/Headers";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { sectionIds, allSubsectionIds } from "@/app/data/rules";
 import BriefRules from "@/app/components/rules/BriefRules";
 import Registration from "@/app/components/rules/Registration";
