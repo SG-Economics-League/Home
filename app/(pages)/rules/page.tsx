@@ -35,7 +35,7 @@ export default function RulesPage() {
       <div className="flex justify-center mb-10">
         <div className="max-w-screen-lg w-full flex flex-col lg:flex-row px-4 md:px-0">
           <div className="hidden lg:block lg:w-96 lg:pr-4">
-            <div className="sticky top-6 h-[calc(100vh-160px)] overflow-y-auto overflow-x-hidden mt-10">
+            <div className="sticky top-12 h-[calc(100vh-160px)] overflow-y-auto overflow-x-hidden mt-10">
               <SideBar selected={selected} selectedSub={selectedSub} />
             </div>
           </div>

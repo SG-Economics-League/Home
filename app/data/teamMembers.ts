@@ -7,6 +7,13 @@ interface TeamMember {
 }
 const teamMembers: TeamMember[] = [
   {
+    "name": "Spencer Ong",
+    "role": "President",
+    "photo": "spencer-ong.jpg",
+    "socials": "https://www.linkedin.com/in/spencer-ong-6106a7322/",
+    "quote": "professional sidequester"
+  },
+  {
     "name": "Yeo Yi Shan",
     "role": "Deputy Chief Organiser",
     "photo": "yeo-yi-shan.jpeg",
@@ -90,6 +97,13 @@ const teamMembers: TeamMember[] = [
     "photo": null,
     "socials": null,
     "quote": null
+  },
+  {
+    "name":"Jonathan Tan",
+    "role": "Lead Problem Setter",
+    "photo": "jonathan-tan.jpeg",
+    "socials": "https://www.linkedin.com/in/jonathan-tan-16b408407?trk=contact-info",
+    "quote": "The early bird gets the cheeseburger."
   },
   {
     "name": "Wee Chuan Jie",
