@@ -42,8 +42,8 @@ const sampleQuestions: SampleQuestion[] = [
 const pastYearPapers: PastYearPaper[] = [
   {
     year: "2025",
-    questions: "https://www.dropbox.com/scl/fi/cymwur1t7gjxklzzapc3v/SELanswers.pdf?rlkey=ycu1ul9xs5t6dww13h8jfsvse&st=6akznf1h&dl=0",
-    answers: "https://www.dropbox.com/scl/fi/cymwur1t7gjxklzzapc3v/SELanswers.pdf?rlkey=ycu1ul9xs5t6dww13h8jfsvse&st=6akznf1h&dl=0",
+    questions: "/sample-questions/[SEL 2025]-Answers.pdf",
+    answers: "/sample-questions/[SEL 2025]-Answers.pdf",
   },
 ];
 

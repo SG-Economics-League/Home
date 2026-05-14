@@ -24,7 +24,7 @@ const teamMembers: TeamMember[] = [
     "name": "Hayden Tan",
     "role": "Head of Events",
     "photo": "hayden-tan.jpg",
-    "socials": "https://www.instagram.com/sleepyaxion?igsh=MWV4M2l5cHZ1N3Zmbw==",
+    "socials": "https://www.instagram.com/sleepyaxion",
     "quote": "i almost fell down that mountain"
     
   },
@@ -32,14 +32,14 @@ const teamMembers: TeamMember[] = [
     "name": "Theshyan Thirun",
     "role": "Events IC",
     "photo": "theshyan-thirun.jpeg",
-    "socials": "https://www.linkedin.com/in/theshyan-thirun-813ab0243?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+    "socials": "https://www.linkedin.com/in/theshyan-thirun-813ab0243",
     "quote": "why did ntuc tie all its goods in rubber bands? to make them income inelastic"
   },
   {
     "name": "Matilda Laq",
     "role": "Events IC",
     "photo": "matilda-laq.jpeg",
-    "socials": "https://www.instagram.com/matildaonbread?igsh=MTRqczlyeDg3dnBkeg%3D%3D&utm_source=qr",
+    "socials": "https://www.instagram.com/matildaonbread",
     "quote": "J2 HELM Student"
   },
   {
@@ -60,7 +60,7 @@ const teamMembers: TeamMember[] = [
     "name":"Zeng TaoJinHao ",
     "role": "Events IC",
     "photo": "zeng-taojinhao.jpg",
-    "socials":"https://www.linkedin.com/in/zeng-taojinhao-a36381218?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    "socials":"https://www.linkedin.com/in/zeng-taojinhao-a36381218",
     "quote":"Be wise, move on"
   },
   {
@@ -88,7 +88,7 @@ const teamMembers: TeamMember[] = [
     "name": "Qian Zhe Chong",
     "role": "Lead Problem Setter",
     "photo": null,
-    "socials": "https://www.linkedin.com/in/qian-chong-3a3410265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    "socials": "https://www.linkedin.com/in/qian-chong-3a3410265",
     "quote": "Take strategies, not sentiments"
   },
   {
@@ -102,7 +102,7 @@ const teamMembers: TeamMember[] = [
     "name":"Jonathan Tan",
     "role": "Lead Problem Setter",
     "photo": "jonathan-tan.jpeg",
-    "socials": "https://www.linkedin.com/in/jonathan-tan-16b408407?trk=contact-info",
+    "socials": "https://www.linkedin.com/in/jonathan-tan-16b408407",
     "quote": "The early bird gets the cheeseburger."
   },
   {
