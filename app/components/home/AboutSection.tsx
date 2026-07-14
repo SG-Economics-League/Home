@@ -227,7 +227,7 @@ function Box4() {
                 <div>
                   <H3L>The Grand Finals</H3L>
                   <p className="text-baseText mt-2 text-lg">
-                    Top teams from the preliminaries battle it out in an exciting in-person finals — featuring live challenges, higher stakes, and the chance to claim the championship title!
+                    Top teams from the preliminaries battle it out in an exciting finals 
                   </p>
                 </div>
               </div>
@@ -244,7 +244,7 @@ function Box4() {
                 <div className="text-center sm:text-right">
                   <H3L>The Grand Finals</H3L>
                   <p className="text-baseText mt-2 sm:mt-4 text-lg sm:text-xl">
-                    A <b>brand new addition for SEL 2026</b> — top teams from the preliminaries battle it out in an exciting in-person finals!
+                    A <b>brand new addition for SEL 2026</b> — top teams from the preliminaries battle it out in an exciting finals!
                   </p>
                 </div>
                 <GradientText from="from-[#7B2FF7]" to="to-[#F9E866]" direction="bg-gradient-to-b" className="text-[8rem] sm:text-[12rem] lg:text-[16rem] font-bold leading-none">

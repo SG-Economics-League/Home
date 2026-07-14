@@ -20,14 +20,22 @@ export default function PastYearPapersSection() {
           >
             <p className="text-2xl font-bold text-baseText slab">SEL {paper.year}</p>
             <div className="flex gap-3">
-              <Button href={paper.questions} className="flex items-center gap-2">
-                <DownloadIcon />
-                Questions
-              </Button>
-              <Button href={paper.answers} variant="secondary" className="flex items-center gap-2">
-                <DownloadIcon className="text-white" />
-                Solutions
-              </Button>
+              {
+                paper.questions == paper.answers ? <Button href={paper.questions} className="flex items-center gap-2">
+                  <DownloadIcon />
+                  Questions & Answers
+                </Button> : <>
+                  <Button href={paper.questions} className="flex items-center gap-2">
+                    <DownloadIcon />
+                    Questions
+                  </Button>
+                  <Button href={paper.answers} variant="secondary" className="flex items-center gap-2">
+                    <DownloadIcon className="text-white" />
+                    Solutions
+                  </Button>
+                </>
+              }
+
             </div>
           </div>
         ))}

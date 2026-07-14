@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CountDown from "../CountDown";
 import GradientText from "../GradientText";
 import { H2M } from "../Headers";
@@ -18,7 +18,16 @@ function calculateTimeLeft(EVENT_TIME: number) {
 }
 
 export default function RegistrationCloseSection() {
-    const [timeLeft, _] = useState(calculateTimeLeft(REGISTRATION_CLOSE));
+    const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft(REGISTRATION_CLOSE));
+
+    useEffect(() => {
+      const interval = window.setInterval(() => {
+        setTimeLeft(calculateTimeLeft(REGISTRATION_CLOSE));
+      }, 1000);
+
+      return () => window.clearInterval(interval);
+    }, []);
+
     return (<section className="flex items-center justify-center py-16 px-4 md:px-0">
               <div className="max-w-screen-lg w-full ">
                 

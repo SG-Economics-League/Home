@@ -7,6 +7,7 @@ import SampleQuestionsSection from "./components/home/SampleQuestionsSection";
 import HeroSection from "./components/home/HeroSection";
 import AboutSection from "./components/home/AboutSection";
 import CompetitionFormatSection from "./components/home/CompetitionFormat";
+import PractisePeriodSection from "./components/home/PractisePeriodSection";
 
 
 
@@ -30,6 +31,8 @@ export default function HomePage() {
       <CompetitionFormatSection />
 
       <SampleQuestionsSection />
+
+      <PractisePeriodSection />
 
       <OrganisingCommitteeSection />
 

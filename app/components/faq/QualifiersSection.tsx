@@ -10,7 +10,7 @@ export default function QualifiersSection() {
     <div className="space-y-6 text-lg">
         <FaqBox
             question="Is AI allowed during the competition?"
-            answer={<span>No, any usage of AI tools such as Chatbots is strictly prohibited. Read our <Link href='/ai-policy' className="text-primary underline">AI Policy</Link> for more details.</span>}
+            answer={<span>No, any usage of AI tools such as Chatbots is strictly prohibited. Our AI Policy will be released closer to the competition.</span>}
         />
         <FaqBox
             question="May I use the internet during this competition?"

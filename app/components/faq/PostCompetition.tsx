@@ -10,7 +10,7 @@ export default function PostCompetitionSection() {
     <div className="space-y-6 text-lg">
         <FaqBox
             question="What happens if I feel that there has been an error in the grading of my answer?"
-            answer={<span>After the competition, teams will be given the opportunity to submit an appeal form if they feel that there has been an error in the grading of their answer. Upon successful appeal, teams who submitted the correct answer will have their points adjusted accordingly. Read our <Link href='/correction-policy' className="text-primary underline">Correction Policy</Link> for more details.</span>}
+            answer={<span>After the competition, teams will be given the opportunity to submit an appeal form if they feel that there has been an error in the grading of their answer. Upon successful appeal, teams who submitted the correct answer will have their points adjusted accordingly.</span>}
         />
         <FaqBox
             question="Will I receive a certificate for participating in SEL?"
