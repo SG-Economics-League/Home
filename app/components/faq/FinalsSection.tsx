@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { H2 } from "../Headers";
 import FaqBox from "./FaqBox";
 
