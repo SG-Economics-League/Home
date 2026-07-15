@@ -28,7 +28,7 @@ export default function HeroSection() {
                 "
               >
                <p className="font-semibold text-baseText sm:text-lg leading-tight text-left">
-                Sat · 26 July 2025 · 09:00 AM — 01:00 PM SGT
+                Sat · 15 August 2026 · 09:00 AM — 01:00 PM SGT
               </p>
               </div>
               <h1
