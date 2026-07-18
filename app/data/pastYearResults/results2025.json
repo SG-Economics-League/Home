@@ -1,0 +1,447 @@
+[
+    {
+        "teamName": "\u8fd9\u4e95\u76d6\u662f\u4ffa\u6361\u561e",
+        "members": [
+            "Koh Kai Jun Elgin",
+            "Frederick Wu Guan Xun",
+            "Tan Jia Hong",
+            "Ling Yifeng",
+            "Wang Enze"
+        ],
+        "medal": "gold",
+        "rank": 1,
+        "score": 394
+    },
+    {
+        "teamName": "putsonpltr",
+        "members": [
+            "Liew Rae Yee",
+            "Ken Soh",
+            "Reyes Lee",
+            "Aiden Lim",
+            "Karan Pillai"
+        ],
+        "medal": "gold",
+        "rank": 2,
+        "score": 388
+    },
+    {
+        "teamName": "Kohang Zhanrui",
+        "members": [
+            "Niu Hongrui",
+            "Teo Zhan Sheng",
+            "Koh Zancong",
+            "Wang Zitian"
+        ],
+        "medal": "gold",
+        "rank": 3,
+        "score": 381
+    },
+    {
+        "teamName": "Unempluzz",
+        "members": [
+            "Adrian Bih",
+            "Zhang Shuxing",
+            "Chang Hong Yu, Henrison",
+            "Wanjari Sarthak",
+            "Lee Zhong Rui"
+        ],
+        "medal": "gold",
+        "rank": 4,
+        "score": 373
+    },
+    {
+        "teamName": "Back in Bizznezz",
+        "members": [
+            "MARVIN LIEW WERN HON",
+            "Mitul",
+            "Sunny",
+            "Jun Yi"
+        ],
+        "medal": "gold",
+        "rank": 5,
+        "score": 352
+    },
+    {
+        "teamName": "econ",
+        "members": [
+            "Rayyhan Arshaq",
+            "Boorla Rishit",
+            "Ephraim Ong",
+            "Jayden Cai",
+            "Gareth Goh"
+        ],
+        "medal": "gold",
+        "rank": 6,
+        "score": 350
+    },
+    {
+        "teamName": "Ricardian Rascals",
+        "members": [
+            "Chong Qian Zhe",
+            "Yoon Sae Young",
+            "Bryan Luo Xiang He",
+            "Licoberto Hanewa Halim",
+            "Yong Chuen Rae"
+        ],
+        "medal": "silver",
+        "rank": 7,
+        "score": 347
+    },
+    {
+        "teamName": "Ceteris Parrot",
+        "members": [
+            "Heng Jia Peng",
+            "Chng Yun Jing Crystal",
+            "Seah Chun Wu",
+            "Dylan Loi Jeun Long",
+            "Heng Kim Jae"
+        ],
+        "medal": "silver",
+        "rank": 8,
+        "score": 338
+    },
+    {
+        "teamName": "FeinBros",
+        "members": [
+            "Desiree Tan Xi Rui",
+            "Low Esme",
+            "Ong Hui Lin",
+            "Fan Yinuo"
+        ],
+        "medal": "silver",
+        "rank": 9,
+        "score": 328
+    },
+    {
+        "teamName": "Scholes Black L_____",
+        "members": [
+            "Liu Weichu",
+            "Cervon Wong",
+            "Samuel Tan"
+        ],
+        "medal": "silver",
+        "rank": 10,
+        "score": 327
+    },
+    {
+        "teamName": "Pocket Rockets",
+        "members": [
+            "Aidan Tan Zhen Xuan",
+            "Lim Hao Quan Damien",
+            "Widjaja Farrell Angelo",
+            "Zhang Han Peng",
+            "Lucas Chin Yee Seng"
+        ],
+        "medal": "silver",
+        "rank": 11,
+        "score": 324
+    },
+    {
+        "teamName": "4O1",
+        "members": [
+            "Cedric Tai Hong-E",
+            "Liu Haoran",
+            "Cedric Chua Yu Xuan",
+            "Ang Yi Zhe"
+        ],
+        "medal": "silver",
+        "rank": 12,
+        "score": 324
+    },
+    {
+        "teamName": "King Julian",
+        "members": [
+            "Julian Tan",
+            "Adam Yujie Lee de Guzman",
+            "Z'ann Lia Ong",
+            "Ma Yiling",
+            "Jovann Loh"
+        ],
+        "medal": "silver",
+        "rank": 13,
+        "score": 323
+    },
+    {
+        "teamName": "Bandar Seri Begawan Jared",
+        "members": [
+            "Jared Xu Xinrui",
+            "Marcus Choo Zhengxiang",
+            "Deng Zhuoyuan",
+            "Sean Phang"
+        ],
+        "medal": "silver",
+        "rank": 14,
+        "score": 320
+    },
+    {
+        "teamName": "Econs League Winners",
+        "members": [
+            "Ong En Jie Jakin",
+            "Jerrett Chua Rui Yang",
+            "Gui Shao Kai",
+            "Zhang Bingguo",
+            "Lim Hong En"
+        ],
+        "medal": "silver",
+        "rank": 15,
+        "score": 308
+    },
+    {
+        "teamName": "yeeconomics",
+        "members": [
+            "Kwek Yee Shong",
+            "Tan Eu Chern",
+            "Kong Jia Le, Dylan",
+            "Rexton Tan Kai Jun"
+        ],
+        "medal": "silver",
+        "rank": 16,
+        "score": 300
+    },
+    {
+        "teamName": "Yellow fellows",
+        "members": [
+            "Ethan Tam Qi Wei",
+            "LEE SEONGUK",
+            "Mehsabir"
+        ],
+        "medal": "silver",
+        "rank": 17,
+        "score": 297
+    },
+    {
+        "teamName": "spongecircle",
+        "members": [
+            "Rieger Alexander Kieran",
+            "Nikhil Chandra Rajesh Kanchi",
+            "S. Vamsi Krishna",
+            "Karmandeep Singh Takhar"
+        ],
+        "medal": "silver",
+        "rank": 18,
+        "score": 293
+    },
+    {
+        "teamName": "67",
+        "members": [
+            "Jonathan Tan",
+            "Clement Chua",
+            "Ding Wenbei",
+            "Warren Ng",
+            "Elliot Tan"
+        ],
+        "medal": "silver",
+        "rank": 19,
+        "score": 293
+    },
+    {
+        "teamName": "ABSOLUTE ADVANTAGE",
+        "members": [
+            "LIN CHIA-CHING",
+            "Tang Rui",
+            "He Haoshi",
+            "Sun Hanfei",
+            "Sheng Kai"
+        ],
+        "medal": "bronze",
+        "rank": 20,
+        "score": 290
+    },
+    {
+        "teamName": "The GDPeeps",
+        "members": [
+            "Luong Qi Zhi Julia",
+            "Foo Ying Han",
+            "Tong Zong Wei",
+            "Nie Zixiang"
+        ],
+        "medal": "bronze",
+        "rank": 21,
+        "score": 280
+    },
+    {
+        "teamName": "HORMAT",
+        "members": [
+            "Tan Kuan Hao",
+            "Nathan Chan Wei Jin",
+            "Jaydon Yong Han En",
+            "Bryan Zhang Tian Yu",
+            "Yuanxi Lu"
+        ],
+        "medal": "bronze",
+        "rank": 22,
+        "score": 275
+    },
+    {
+        "teamName": "Bob the builder",
+        "members": [
+            "Nicholas Ho Wei Liang",
+            "Rachel Goh Rui Ting",
+            "Shane Tan Yue Yang",
+            "Koh Wei Lun",
+            "Nathaniel Lin Yi Kai"
+        ],
+        "medal": "bronze",
+        "rank": 23,
+        "score": 274
+    },
+    {
+        "teamName": "VJSIGMAS",
+        "members": [
+            "Aarush Agrawal",
+            "Zhang Ximing",
+            "Shanmugaraja",
+            "Phua Sheng Yang Jonas"
+        ],
+        "medal": "bronze",
+        "rank": 24,
+        "score": 274
+    },
+    {
+        "teamName": "Wolves of Wall Street",
+        "members": [
+            "Archit Lamba",
+            "Moksh Basu",
+            "Vivaan Satya Maruvada"
+        ],
+        "medal": "bronze",
+        "rank": 25,
+        "score": 273
+    },
+    {
+        "teamName": "EconsPro",
+        "members": [
+            "Kor Hor Ken",
+            "Jayden Lim Jun Ting",
+            "Fu Junhao"
+        ],
+        "medal": "bronze",
+        "rank": 26,
+        "score": 273
+    },
+    {
+        "teamName": "cayden",
+        "members": [
+            "Kyle Chia",
+            "Dallas Win",
+            "Gideon Tan",
+            "See Ler Vin",
+            "Darius Toh"
+        ],
+        "medal": "bronze",
+        "rank": 27,
+        "score": 267
+    },
+    {
+        "teamName": "4 Horsemen of Market Failure",
+        "members": [
+            "Le Nguyen Thanh Minh",
+            "Nguyen Hoang Long",
+            "Lee Kwan Hao",
+            "Alexander Elnathan Ang"
+        ],
+        "medal": "bronze",
+        "rank": 28,
+        "score": 267
+    },
+    {
+        "teamName": "4 sahurs",
+        "members": [
+            "Wang Chen",
+            "Kong Jia Le",
+            "Liang Yihang",
+            "Javier Ho Yi Xun"
+        ],
+        "medal": "bronze",
+        "rank": 29,
+        "score": 265
+    },
+    {
+        "teamName": "Banana Rare, Banana Valuable",
+        "members": [
+            "Le Nguyen Quang Vinh",
+            "Ong Jun Siong",
+            "Chiu Lai Hong Leon",
+            "Lee Jun Yi",
+            "Soh Zhi Qian"
+        ],
+        "medal": "bronze",
+        "rank": 30,
+        "score": 261
+    },
+    {
+        "teamName": "econminions",
+        "members": [
+            "Elexius Wong",
+            "Elisa Lim Yi-Jie",
+            "Au Chun Kiat",
+            "Lu Xingyu",
+            "Althea Teo Yixin"
+        ],
+        "medal": "bronze",
+        "rank": 31,
+        "score": 256
+    },
+    {
+        "teamName": "THE goon squad",
+        "members": [
+            "Malcolm Yong Ren Jie",
+            "Joe Liu Rui Zhe",
+            "Jerome See Tsor Ing",
+            "Goh Shang Yu",
+            "Jericho Ng Yan Xi"
+        ],
+        "medal": "bronze",
+        "rank": 32,
+        "score": 252
+    },
+    {
+        "teamName": "marginal thinkers",
+        "members": [
+            "Neelam Ritesh",
+            "Delwin Goh",
+            "Afan Mustafa",
+            "Charissa chia xin leng",
+            "Pham Phu Minh"
+        ],
+        "medal": "bronze",
+        "rank": 33,
+        "score": 252
+    },
+    {
+        "teamName": "hawk threeah",
+        "members": [
+            "Tan Zi Yi",
+            "Lee Guan Yi",
+            "Chee Wen Yong"
+        ],
+        "medal": "bronze",
+        "rank": 34,
+        "score": 251
+    },
+    {
+        "teamName": "Team Magnum",
+        "members": [
+            "Yeo Jiun Hsiang",
+            "Divyansh Jain",
+            "Lim Ze Hang",
+            "Choo Zheng Bin",
+            "Kasikidnumchai Bhuminan"
+        ],
+        "medal": "bronze",
+        "rank": 35,
+        "score": 248
+    },
+    {
+        "teamName": "zen masters",
+        "members": [
+            "Kym lew ding ling",
+            "Reyanna ong zhi xin",
+            "Levana li yi ran"
+        ],
+        "medal": "bronze",
+        "rank": 36,
+        "score": 247
+    }
+]
