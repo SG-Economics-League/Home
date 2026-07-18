@@ -7,6 +7,7 @@ import { twMerge } from "tailwind-merge";
 import MenuIcon from "./icons/MenuIcon";
 import CrossIcon from "./icons/CrossIcon";
 import navigationPages from "../data/navigationPages";
+import { REGISTRATION_LINK } from "../data/links";
 
 
 function NavbarItem({ href, children, onClick, className }: { href: string; children: React.ReactNode; onClick?: () => void; className?: string }) {
@@ -48,9 +49,11 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
+          <Link href={REGISTRATION_LINK}>
           <Button>
             Register Now!
           </Button>
+          </Link>
         </div>
         <button
           onClick={() => setIsOpen(true)}
