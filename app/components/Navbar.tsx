@@ -80,7 +80,7 @@ export default function Navbar() {
         </button>
         <div className="flex flex-col items-start px-6 space-y-6 mt-4 text-[#273a30] slab font-semibold">
           {navigationPages.map(({ name, href }) => (
-            <NavbarItem key={href} href={href} onClick={() => setIsOpen(false)} className="text-xl">
+            <NavbarItem key={href} href={href} onClick={() => setIsOpen(false)} className="text-xl w-full">
               {name}
             </NavbarItem>
           ))}
