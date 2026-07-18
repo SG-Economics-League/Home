@@ -1,13 +1,19 @@
 import { DISCORD_LINK } from "@/app/data/links";
 import { SubHeading } from "./CustomComponents";
+import { SIGN_IN_OPEN, COMPETITION_START, COMPETITION_END } from "@/app/data/eventDatetimes";
+import { formatTime24h } from "@/app/utils/formatDateTime";
 
 export default function ConductOfTheContest() {
+  const signInTime = formatTime24h(SIGN_IN_OPEN);
+  const startTime = formatTime24h(COMPETITION_START);
+  const endTime = formatTime24h(COMPETITION_END);
+
   return (
     <section className="mt-12">
       <SubHeading className="slab">Conduct of the Contest</SubHeading>
       <p className="mt-4">
-        Participants may sign into the official <b>SEL Platform</b> at <b>08:40</b> on the day of the
-        contest. The contest will begin promptly at <b>09:00</b> and end at <b>13:00</b>.
+        Participants may sign into the official <b>SEL Platform</b> at <b>{signInTime}</b> on the day of the
+        contest. The contest will begin promptly at <b>{startTime}</b> and end at <b>{endTime}</b>.
       </p>
       <p className="mt-4">
         The <b>Main Problems</b> are accessible throughout the contest may each contain multiple

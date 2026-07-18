@@ -1,4 +1,18 @@
 import { SubHeading, UnorderedList } from "./CustomComponents";
+import { REGISTRATION_START, REGISTRATION_CLOSE } from "@/app/data/eventDatetimes";
+
+const registrationStartText = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  timeZone: "Asia/Singapore",
+}).format(new Date(REGISTRATION_START));
+
+const registrationCloseText = new Intl.DateTimeFormat("en-GB", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "Asia/Singapore",
+}).format(new Date(REGISTRATION_CLOSE));
 
 function Registration() {
   return (
@@ -7,7 +21,7 @@ function Registration() {
       <UnorderedList
         items={[
           "Participants must register in the competition in order to participate.",
-          "Registration is open at sgeconsleague.org from <b>1 May</b> to <b>4 July 2025</b>.",
+          `Registration is open at sgeconsleague.org from <b>${registrationStartText}</b> to <b>${registrationCloseText}</b>.`,
           "Each team must comprise <b>3 to 5 members</b>.",
           "For the school category, all team members must be pre-university students: i.e. studying in high school/equivalent or below (JCs/MI, Secondary Schools, Polytechnics, international high schools, etc.).",
           "Each contestant must be a member of only <b>one team</b>.",

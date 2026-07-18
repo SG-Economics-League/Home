@@ -1,6 +1,13 @@
 import Animation from "./AnimatedBackground";
+import { COMPETITION_START, COMPETITION_END } from "@/app/data/eventDatetimes";
+import { formatDateLong, formatWeekdayShort, formatTime12h } from "@/app/utils/formatDateTime";
 
 export default function HeroSection() {
+  const weekday = formatWeekdayShort(COMPETITION_START);
+  const dateStr = formatDateLong(COMPETITION_START);
+  const startTime = formatTime12h(COMPETITION_START);
+  const endTime = formatTime12h(COMPETITION_END);
+
     return <section
             className="
               relative
@@ -28,7 +35,7 @@ export default function HeroSection() {
                 "
               >
                <p className="font-semibold text-baseText sm:text-lg leading-tight text-left">
-                Sat · 15 August 2026 · 09:00 AM — 01:00 PM SGT
+                {weekday} · {dateStr} · {startTime} — {endTime} SGT
               </p>
               </div>
               <h1
