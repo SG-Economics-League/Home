@@ -49,11 +49,11 @@ function EconomaniaSection() {
                 <li className="text-baseText text-lg flex items-start gap-2">
                     <span className="text-[#5073b1] font-bold text-xl leading-tight mt-0.5">*</span>
                     <div>
-                        <div><b>5</b> Economic topics</div>
+                        <div><b>4</b> Economic topics</div>
                         <ul className="list-none space-y-1 mt-1 ml-4">
                             <li className="text-baseText text-md flex items-start gap-2">
                                 <span className="text-[#5073b1] font-bold leading-tight mt-0.5">–</span>
-                                <div>Microeconomics, Firms, Game Theory, Macroeconomics, Financial Economics</div>
+                                <div>Microeconomics, Game Theory, Macroeconomics, Financial Economics</div>
                             </li>
                         </ul>
                     </div>

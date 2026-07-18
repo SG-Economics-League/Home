@@ -25,7 +25,7 @@ export default function QualifiersSection() {
         />
         <FaqBox
             question="What happens if I submit a wrong answer?"
-            answer="You can reattempt a question-part as many times as you need, but the points awarded for a correct answer will decrease after incorrect attempts. Certain questions such as MCQs have a limit of 3 attempts."
+            answer="You can reattempt a question-part as many times as you need, but the points awarded for a correct answer will decrease after incorrect attempts. Certain questions such as MCQs have a limit of 2 attempts."
         />
         <FaqBox
             question="May I skip questions?"
@@ -33,7 +33,7 @@ export default function QualifiersSection() {
         />
         <FaqBox
             question="How do I obtain bonus points?"
-            answer="From 10 am, the Economania section will be unlocked, featuring 5 categories of 3 questions each in ascending difficulty. If your team completes some or all categories of Economania before 11 am, the points which your team obtained from those categories will be doubled."
+            answer="From 10 am, the Economania section will be unlocked, featuring 4 categories of 3 questions each in ascending difficulty. If your team completes some or all categories of Economania before 11 am, the points which your team obtained from those categories will be doubled."
         />
     </div>
     </section>

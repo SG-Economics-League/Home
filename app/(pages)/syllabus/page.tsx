@@ -21,7 +21,6 @@ export default function SyllabusPage() {
         <ul className="list-disc list-inside mb-6 space-y-1 ml-4">
           <li>Microeconomics</li>
           <li>Game Theory and Behavioural Economics</li>
-          <li>Firm Theory</li>
           <li>Macroeconomics</li>
           <li>Financial Economics</li>
         </ul>

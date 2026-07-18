@@ -88,13 +88,13 @@ export default function ContestFormatAndScoring() {
       <ul className="list-disc ml-6 mt-2 space-y-2 text-baseText">
         <li>
           Each MCQ, MCQ Multi-select, Sort, and True/False Set question-part allows for no more than
-          <b> 3 attempts</b>. After <b>3 incorrect attempts</b>, such question-parts will be disabled
+          <b> 2 attempts</b>. After <b>2 incorrect attempts</b>, such question-parts will be disabled
           and score <b>0</b>. No partial credit is given; an exact match is always required.
         </li>
       </ul>
       <SubHeading2 className="mt-12">Main Problems Scoring</SubHeading2>
       <p className="mt-4">The following lookup table illustrates SEL&apos;s scoring scheme:</p>
-      <div className="overflow-x-auto md:overflow-x-visible mt-6 border-2 border-primary rounded-xl w-full">
+      <div className="overflow-x-auto overflow-y-hidden mt-6 border-2 border-primary rounded-xl w-full">
         <table className="w-full text-center border-separate" style={{ borderSpacing: 0 }}>
           <colgroup>
             <col className="w-[140px]" />
@@ -205,6 +205,33 @@ export default function ContestFormatAndScoring() {
               <td className="px-3 py-2 border border-primary">2</td>
               <td className="px-3 py-2 border border-primary">1</td>
             </tr>
+            <tr>
+              <td className="px-3 py-2 border border-primary font-semibold">11</td>
+              <td className="px-3 py-2 border border-primary">11</td>
+              <td className="px-3 py-2 border border-primary">6</td>
+              <td className="px-3 py-2 border border-primary">4</td>
+              <td className="px-3 py-2 border border-primary">3</td>
+              <td className="px-3 py-2 border border-primary">2</td>
+              <td className="px-3 py-2 border border-primary">1</td>
+            </tr>
+            <tr>
+              <td className="px-3 py-2 border border-primary font-semibold">12</td>
+              <td className="px-3 py-2 border border-primary">12</td>
+              <td className="px-3 py-2 border border-primary">7</td>
+              <td className="px-3 py-2 border border-primary">4</td>
+              <td className="px-3 py-2 border border-primary">3</td>
+              <td className="px-3 py-2 border border-primary">2</td>
+              <td className="px-3 py-2 border border-primary">1</td>
+            </tr>
+            <tr>
+              <td className="px-3 py-2 border border-primary font-semibold">13</td>
+              <td className="px-3 py-2 border border-primary">13</td>
+              <td className="px-3 py-2 border border-primary">7</td>
+              <td className="px-3 py-2 border border-primary">5</td>
+              <td className="px-3 py-2 border border-primary">3</td>
+              <td className="px-3 py-2 border border-primary">2</td>
+              <td className="px-3 py-2 border border-primary">1</td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -219,16 +246,15 @@ export default function ContestFormatAndScoring() {
       </ul>
       <SubHeading2 className="mt-12">Economania</SubHeading2>
       <p className="mt-4">
-        At <b>10:00 AM</b>, the Economania section unlocks, offering 15 new problems across{" "}
-        <b>5 categories</b> (Microeconomics, Firms, Game Theory, Macroeconomics, and Financial
+        At <b>10:00 AM</b>, the Economania section unlocks, offering 12 new problems across{" "}
+        <b>4 categories</b> (Microeconomics, Macroeconomics, Game Theory, and Financial
         Economics). Each category has 3 problems in ascending difficulty:
       </p>
-      <div className="mt-6 border-2 border-primary rounded-xl overflow-x-auto md:overflow-x-visible">
+      <div className="mt-6 border-2 border-primary rounded-xl overflow-x-auto overflow-y-hidden">
         <table className="w-full text-left border-separate" style={{ borderSpacing: 0 }}>
           <thead className="bg-secondary text-white">
             <tr>
               <th className="px-4 py-3 border border-primary font-medium">Microeconomics</th>
-              <th className="px-4 py-3 border border-primary font-medium">Firm Theory</th>
               <th className="px-4 py-3 border border-primary font-medium">Game Theory</th>
               <th className="px-4 py-3 border border-primary font-medium">Macroeconomics</th>
               <th className="px-4 py-3 border border-primary font-medium">Finance</th>
@@ -237,7 +263,6 @@ export default function ContestFormatAndScoring() {
           <tbody className="bg-white text-baseText">
             <tr>
               <td className="px-4 py-3 border border-primary">Micro Q1</td>
-              <td className="px-4 py-3 border border-primary">Firms Q1</td>
               <td className="px-4 py-3 border border-primary">Game Theory Q1</td>
               <td className="px-4 py-3 border border-primary">Macro Q1</td>
               <td className="px-4 py-3 border border-primary">Finance Q1</td>
@@ -246,9 +271,6 @@ export default function ContestFormatAndScoring() {
               <tr key={q}>
                 <td className="px-4 py-3 border border-primary">
                   Micro Q{q} <span className="text-[#FF004F] font-semibold">(Locked)</span>
-                </td>
-                <td className="px-4 py-3 border border-primary">
-                  Firms Q{q} <span className="text-[#FF004F] font-semibold">(Locked)</span>
                 </td>
                 <td className="px-4 py-3 border border-primary">
                   Game Theory Q{q} <span className="text-[#FF004F] font-semibold">(Locked)</span>
