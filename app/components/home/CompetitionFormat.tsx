@@ -30,7 +30,7 @@ function MainQuestionsSection() {
             </ul>
         </div>
         <div className="flex justify-center mt-auto">
-        <Button href="/rules" className="mt-4 mx-auto block">
+        <Button href="/rules" target="_self" className="mt-4 mx-auto block">
             Read Rules →
         </Button>
         </div>

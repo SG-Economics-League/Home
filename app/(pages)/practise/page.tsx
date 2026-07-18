@@ -23,6 +23,7 @@ export default function PractisePage() {
         </p>
         <Button
           href="/syllabus"
+          target="_self"
           className="mx-auto md:mx-0 block mt-4"
         >
           View the Syllabus

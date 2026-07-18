@@ -49,7 +49,7 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
-          <Button href={REGISTRATION_LINK}>
+          <Button href={REGISTRATION_LINK} className="ml-2">
             Register Now!
           </Button>
         </div>

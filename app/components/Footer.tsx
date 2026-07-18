@@ -103,11 +103,6 @@ export default function Footer() {
                     Practise
                   </Link>
                 </li>
-                {/* <li>
-                  <Link href="/archives" className="hover:underline">
-                    Archives
-                  </Link>
-                </li> */}
               </ul>
             </div>
             <div className="text-left">

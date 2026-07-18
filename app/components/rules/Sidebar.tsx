@@ -29,7 +29,7 @@ export default function SideBar({ selected, selectedSub }: { selected?: string; 
     if (el) {
       const offset = 80;
       console.log( el.getBoundingClientRect().top + window.scrollY - offset )
-      document.body.scrollBy({
+      window.scrollBy({
         top: el.getBoundingClientRect().top + window.scrollY - offset,
         behavior: "smooth",
       });

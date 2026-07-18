@@ -66,7 +66,7 @@ export default function SyllabusPage() {
           are solvable via the application of concepts taught at the JC level.
           The SEL Academics Team thus recommends visiting the following page and attempt last year{"'"}s SEL question:
         </p>
-        <Button variant="secondary" href="/practise" className="mb  -4">
+        <Button variant="secondary" target="_self" href="/practise" className="mb  -4">
           View Sample Questions &rarr;
         </Button>
         <p className="font-semibold">Good luck!</p>

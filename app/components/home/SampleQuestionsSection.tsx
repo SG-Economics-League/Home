@@ -38,12 +38,14 @@ export default function SampleQuestionsSection() {
                 <Button
                   variant="secondary"
                   href="/practise"
+                  target="_self"
                   className="mx-auto md:mx-0"
                   >
                   View Sample Questions &rarr;
                 </Button>
                 <Button
                   href="/syllabus"
+                  target="_self"
                   className="mx-auto md:mx-0"
                 >
                   View the Syllabus
