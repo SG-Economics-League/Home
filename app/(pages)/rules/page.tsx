@@ -48,7 +48,7 @@ export default function RulesPage() {
             <ConductOfTheContest />
             <ParticipantsCodeofConduct />
             <TermsAndConditions />
-            <p className="text-sm text-gray-500 mt-8">Last Updated: 4 April 2026</p>
+            <p className="text-sm text-gray-500 mt-8">Last Updated: 19 July 2026</p>
           </div>
         </div>
       </div>
