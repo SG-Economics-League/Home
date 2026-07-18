@@ -46,7 +46,7 @@ export default function MobileContents({ selected, selectedSub }: { selected?: s
       const el = document.getElementById(id);
       if (el) {
         const offset = 80;
-        window.scrollTo({
+        document.body.scrollTo({
           top: el.getBoundingClientRect().top + window.scrollY - offset,
           behavior: "smooth",
         });
@@ -64,9 +64,9 @@ export default function MobileContents({ selected, selectedSub }: { selected?: s
       `}
     >
       <div className="bg-white border-2 border-primary rounded shadow overflow-hidden">
-        <div className="p-4 flex items-center justify-between">
+        <div onClick={() => setIsOpen(!isOpen)} className="p-4 flex items-center justify-between">
           <span className="font-bold text-lg">Contents</span>
-          <button onClick={() => setIsOpen(!isOpen)} className="text-xl font-bold">
+          <button className="text-xl font-bold">
             <MenuArrowIcon isExpanded={isOpen} />
           </button>
         </div>

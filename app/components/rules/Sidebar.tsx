@@ -27,9 +27,9 @@ export default function SideBar({ selected, selectedSub }: { selected?: string; 
     const el = document.getElementById(id);
     console.log(el)
     if (el) {
-      const offset = 80;
+      const offset = 120;
       console.log( el.getBoundingClientRect().top + window.scrollY - offset )
-      window.scrollBy({
+      document.body.scrollBy({
         top: el.getBoundingClientRect().top + window.scrollY - offset,
         behavior: "smooth",
       });
