@@ -49,11 +49,9 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
-          <Link href={REGISTRATION_LINK}>
-          <Button>
+          <Button href={REGISTRATION_LINK}>
             Register Now!
           </Button>
-          </Link>
         </div>
         <button
           onClick={() => setIsOpen(true)}
@@ -86,7 +84,7 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
-          <Button onClick={() => setIsOpen(false)} className="w-full mt-4">
+          <Button href={REGISTRATION_LINK} onClick={() => setIsOpen(false)} className="w-full mt-4">
             Register Now!
           </Button>
 

@@ -30,7 +30,7 @@ function MainQuestionsSection() {
             </ul>
         </div>
         <div className="flex justify-center mt-auto">
-        <Button className="mt-4 mx-auto block">
+        <Button href="/rules" className="mt-4 mx-auto block">
             Read Rules →
         </Button>
         </div>
@@ -65,7 +65,7 @@ function EconomaniaSection() {
             </ul>
         </div>
         <div className="flex justify-center">
-        <Button className="mt-4 mx-auto block">
+        <Button href="/rules" className="mt-4 mx-auto block">
             Read Rules →
         </Button>
         </div>
