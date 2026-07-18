@@ -17,14 +17,10 @@ export default function PractisePage() {
         <H1>
           Practise 
         </H1>
-        <p className="text-gray-700 text-lg mb-2 text-center md:text-left">
-          Wonder what types of questions SEL tests?
-          <br /> Check out these curated examples, then review past year papers!
-        </p>
         <Button
           href="/syllabus"
           target="_self"
-          className="mx-auto md:mx-0 block mt-4"
+          className="mx-auto md:mx-0 block mt-12"
         >
           View the Syllabus
         </Button>

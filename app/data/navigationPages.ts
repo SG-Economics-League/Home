@@ -8,6 +8,7 @@ const navigationPages: NavigationPage[] = [
     { name: "FAQ", href: "/faq" },
     { name: "Syllabus", href: "/syllabus" },
     { name: "Practise", href: "/practise" },
+    { name: "Results", href: "/results"}
 ]
 
 export default navigationPages;

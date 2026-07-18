@@ -60,6 +60,19 @@ function Box1() {
           </div>
 }
 
+function EligibilityNote() {
+  return (
+    <span className="group relative inline-flex align-middle ml-1 cursor-help">
+      <span className="flex h-4 w-4 items-center justify-center rounded-full border border-primary text-[10px] font-semibold leading-none text-primary">
+        i
+      </span>
+      <span className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 w-64 max-w-[80vw] -translate-x-1/2 rounded-lg border border-primary bg-white p-3 text-sm font-normal normal-case text-baseText shadow-lg opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+        Everyone else is welcome to take part in the &ldquo;Open&rdquo; category, but will not be eligible to receive awards or to advance to the finals.
+      </span>
+    </span>
+  );
+}
+
 function Box2() {
     return <div>
             <div className="block sm:hidden border-2 border-primary bg-white shadow-lg rounded-xl px-6 py-4 sm:px-8 sm:py-6">
@@ -75,9 +88,10 @@ function Box2() {
                   2
                 </GradientText>
                 <div>
-                  <H3L >Calling all Pre-U Students!</H3L>
+                  <H3L >Calling all Pre-U Students! <EligibilityNote /></H3L>
                   <p className="text-baseText mt-2 text-lg">
                     Studying in a JC/MI, local polytechnic, ITE, or secondary school? You are eligible to participate!
+                    
                   </p>
                 </div>
               </div>
@@ -98,6 +112,7 @@ function Box2() {
                   <p className="text-baseText mt-2 sm:mt-4 text-lg sm:text-xl">
                     Studying in a JC/MI, local polytechnic, ITE, or
                     secondary school? You are eligible to participate!
+                    <EligibilityNote />
                   </p>
                 </div>
                 <GradientText from="from-[#FFAE00]" to="to-[#F9E866]" direction="bg-gradient-to-b" className="text-[8rem] sm:text-[12rem] lg:text-[16rem] font-bold leading-none">
