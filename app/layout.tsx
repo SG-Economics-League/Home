@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { Roboto_Serif } from "next/font/google";
 import { Roboto_Slab } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next"
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -50,6 +51,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics/>
       </body>
     </html>
   );
