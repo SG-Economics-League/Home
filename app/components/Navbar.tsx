@@ -8,6 +8,7 @@ import MenuIcon from "./icons/MenuIcon";
 import CrossIcon from "./icons/CrossIcon";
 import navigationPages from "../data/navigationPages";
 import { REGISTRATION_LINK } from "../data/links";
+import { track } from '@vercel/analytics';
 
 
 function NavbarItem({ href, children, onClick, className }: { href: string; children: React.ReactNode; onClick?: () => void; className?: string }) {
@@ -49,7 +50,9 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
-          <Button href={REGISTRATION_LINK} className="ml-2">
+          <Button href={REGISTRATION_LINK} 
+          onClick={()=>{track("register")}}
+          className="ml-2">
             Register Now!
           </Button>
         </div>
@@ -84,7 +87,10 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
-          <Button href={REGISTRATION_LINK} onClick={() => setIsOpen(false)} className="w-full mt-4">
+          <Button href={REGISTRATION_LINK} onClick={() => {
+            setIsOpen(false)
+            track("register")  
+          }} className="w-full mt-4">
             Register Now!
           </Button>
 

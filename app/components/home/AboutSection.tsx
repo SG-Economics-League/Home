@@ -2,6 +2,7 @@ import Image from "next/image";
 import GradientText from "../GradientText";
 import { H3L } from "../Headers";
 import { REGISTRATION_LINK } from "@/app/data/links";
+import { track } from "@vercel/analytics";
 
 function Box1() {
     return <div className="flex flex-col sm:flex-row items-center justify-start">
@@ -145,6 +146,7 @@ function Box3() {
                   <a
                     href={REGISTRATION_LINK}
                     target="_blank"
+                    onClick={()=>{track("register")}}
                     rel="noreferrer"
                     className="
                       mt-4 sm:mt-6
@@ -162,10 +164,7 @@ function Box3() {
                       transition-all
                       duration-200
                       hover:scale-105
-                      transition-transform
-                      duration-200
                       ease-in-out
-                      hover:scale-105
                     "
                   >
                     Register Now!
@@ -187,6 +186,7 @@ function Box3() {
                     href={REGISTRATION_LINK}
                     target="_blank"
                     rel="noreferrer"
+                    onClick={()=>{track("register")}}
                     className="
                       mt-4 sm:mt-6
                       inline-block
@@ -203,10 +203,7 @@ function Box3() {
                       transition-all
                       duration-200
                       hover:scale-105
-                      transition-transform
-                      duration-200
                       ease-in-out
-                      hover:scale-105
                     "
                   >
                     Register Now!
