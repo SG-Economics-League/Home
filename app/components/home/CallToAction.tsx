@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { H2M } from "../Headers";
 import GradientText from "../GradientText";
-import { DISCORD_LINK } from "@/app/data/links";
-import { track } from "@vercel/analytics";
+import DiscordLink from "../DiscordLink";
 
 export default function CallToAction() {
     return <section className="flex items-center justify-center py-16 px-4 md:px-0">
@@ -65,11 +64,7 @@ export default function CallToAction() {
               <p className="text-baseText mt-6 max-w-lg">
                 Ask questions, make friends, and form teams. Good vibes only!
               </p>
-              <a
-                onClick={()=>track("joinDiscord")}
-                href={DISCORD_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
+              <DiscordLink
                 className="
                   mt-9
                   px-5
@@ -95,7 +90,7 @@ export default function CallToAction() {
                   height={24}
                 />
                 <span>Join the SEL Discord Server!</span>
-              </a>
+              </DiscordLink>
             </div>
           </div>
         </div>

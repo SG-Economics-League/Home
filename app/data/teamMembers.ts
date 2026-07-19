@@ -17,7 +17,7 @@ const teamMembers: TeamMember[] = [
     "name": "Yeo Yi Shan",
     "role": "Deputy Chief Organiser",
     "photo": "yeo-yi-shan.jpeg",
-    "socials": "www.linkedin.com/in/yeo-yi-shan-aa697a278",
+    "socials": "https://www.linkedin.com/in/yeo-yi-shan-aa697a278",
     "quote": "im lovin' it"
   },
   {
@@ -53,7 +53,7 @@ const teamMembers: TeamMember[] = [
     "name": "Toh jo-lynne",
     "role": "Events IC",
     "photo": "toh-jo-lynne.jpeg",
-    "socials": "www.linkedin.com/in/jolynne-toh-747229356",
+    "socials": "https://www.linkedin.com/in/jolynne-toh-747229356",
     "quote": "Stay hungry, stay foolish"
   },
   {
@@ -67,14 +67,14 @@ const teamMembers: TeamMember[] = [
     "name": "Fang Yuyue",
     "role": "Chief Academic Officer",
     "photo": "fang-yuyue.jpeg",
-    "socials": "www.linkedin.com/in/fang-yuyue",
+    "socials": "https://www.linkedin.com/in/fang-yuyue",
     "quote": "Hi!"
   },
   {
     "name": "Dhruv Aggarwal",
     "role": "Academic Consultant",
     "photo": "dhruv-aggarwal.jpeg",
-    "socials": "www.linkedin.com/in/dhruv-aggarwal-finance",
+    "socials": "https://www.linkedin.com/in/dhruv-aggarwal-finance",
     "quote": "Chase the impossible"
   },
   {
@@ -116,7 +116,7 @@ const teamMembers: TeamMember[] = [
     "name": "Chua Zhong Ding",
     "role": "Lead Software Developer",
     "photo": "chua-zhong-ding.png",
-    "socials": "www.linkedin.com/in/chua-zhong-ding",
+    "socials": "https://www.linkedin.com/in/chua-zhong-ding-94412728b/",
     "quote": "unpaid intern"
   }
 ]
