@@ -2,6 +2,7 @@ import { DISCORD_LINK } from "@/app/data/links";
 import { SubHeading } from "./CustomComponents";
 import { SIGN_IN_OPEN, COMPETITION_START, COMPETITION_END } from "@/app/data/eventDatetimes";
 import { formatTime24h } from "@/app/utils/formatDateTime";
+import { track } from "@vercel/analytics";
 
 export default function ConductOfTheContest() {
   const signInTime = formatTime24h(SIGN_IN_OPEN);
@@ -32,6 +33,7 @@ export default function ConductOfTheContest() {
         In the event of technical difficulties, disruptions, or questions about the platform,
         participants should raise a <b>Support Ticket</b> on the{" "}
         <a
+          onClick={()=>track("joinDiscord")}
           href={DISCORD_LINK}
           target="_blank"
           rel="noopener noreferrer"

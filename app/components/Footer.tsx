@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { DISCORD_LINK } from "../data/links";
+import { track } from "@vercel/analytics";
 
 export default function Footer() {
   return (
@@ -146,6 +147,7 @@ export default function Footer() {
                 </Link>
                 <Link
                   href={DISCORD_LINK}
+                  onClick={()=>track("joinDiscord")}
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
