@@ -10,7 +10,7 @@ import "./styles/globals.css";
 
 export const metadata: Metadata = {
   title: "Singapore Economics League | SEL ", 
-  description: "An exciting new contest in Economics.",
+  description: "The Singapore Economics League is back for it's second run! Team up with your friends to tackle exciting new economics problems!",
 };
 
 const roboto = Roboto({
