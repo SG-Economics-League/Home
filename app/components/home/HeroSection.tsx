@@ -1,6 +1,9 @@
 import Animation from "./AnimatedBackground";
 import { COMPETITION_START, COMPETITION_END } from "@/app/data/eventDatetimes";
 import { formatDateLong, formatWeekdayShort, formatTime12h } from "@/app/utils/formatDateTime";
+import Button from "../Button";
+import { REGISTRATION_LINK } from "@/app/data/links";
+import { track } from "@vercel/analytics";
 
 export default function HeroSection() {
   const weekday = formatWeekdayShort(COMPETITION_START);
@@ -61,7 +64,9 @@ export default function HeroSection() {
                 A team based competition for problem solving in economics.
                 <br />
                 Battle your fellow students for the crown!
+                
               </p>
+              <Button className="mt-4 text-xl"  href={REGISTRATION_LINK} onClick={()=>{track("register")}}>Register</Button>
             </div>
           </section>
 }

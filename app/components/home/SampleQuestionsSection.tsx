@@ -12,9 +12,9 @@ function PreviewCard({ src, alt, className }: { src: string; alt: string; classN
 }
 
 export default function SampleQuestionsSection() {
-    return <section className="w-full bg-[#fbfafb] py-16">
+    return <section className="w-full bg-[#fbfafb] py-4 md:py-16">
         <div className="max-w-screen-lg mx-auto px-4 md:px-0">
-          <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-stretch gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 lg:grid-rows-1 items-stretch gap-0 md:gap-12">
             <div>
               <Image
                 src="/graphics/studying.png"

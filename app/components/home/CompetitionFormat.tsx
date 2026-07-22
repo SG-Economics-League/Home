@@ -73,7 +73,7 @@ function EconomaniaSection() {
 }
 
 export default function CompetitionFormatSection() {
-    return <section className="w-full py-16 px-4">
+    return <section className="w-full py-4 pt-8 md:py-16 px-4">
         <div className="max-w-screen-lg w-full mx-auto">
             <H2M>
                 Competition Format{" "}
