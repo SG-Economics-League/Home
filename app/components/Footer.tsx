@@ -158,7 +158,7 @@ export default function Footer() {
         <hr className="border-gray-600 my-6" />
 
         <div className="flex items-center text-sm text-gray-400">
-          <span className="mr-4">© Singapore Economics League 2025</span>
+          <span className="mr-4">© Singapore Economics League 2026</span>
           <Link href="/privacy" className="hover:underline text-gray-400">
             Privacy Policy
           </Link>
