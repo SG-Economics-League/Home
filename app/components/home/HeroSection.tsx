@@ -2,7 +2,7 @@ import Animation from "./AnimatedBackground";
 import { COMPETITION_START, COMPETITION_END } from "@/app/data/eventDatetimes";
 import { formatDateLong, formatWeekdayShort, formatTime12h } from "@/app/utils/formatDateTime";
 import Button from "../Button";
-import { REGISTRATION_LINK } from "@/app/data/links";
+import { PRACTISE_LINK, REGISTRATION_LINK } from "@/app/data/links";
 import { track } from "@vercel/analytics";
 
 export default function HeroSection() {
@@ -66,7 +66,17 @@ export default function HeroSection() {
                 Battle your fellow students for the crown!
                 
               </p>
+              <div className="flex flex-wrap gap-3 mt-6">
               <Button className="mt-4 text-xl"  href={REGISTRATION_LINK} onClick={()=>{track("register")}}>Register</Button>
+              <Button
+                  variant="secondary"
+                  href={PRACTISE_LINK}
+                  trackingEvent="practise_period_website_visit"
+                  className="mt-4 text-xl"
+                >
+                  Practise 
+                </Button>
+                </div>
             </div>
           </section>
 }

@@ -1,8 +1,11 @@
+
 import React from "react";
 import { H1 } from "@/app/components/Headers";
 import Button from "@/app/components/Button";
 import SampleQuestionsSection from "@/app/components/practise/SampleQuestionsSection";
 import PastYearPapersSection from "@/app/components/practise/PastYearPapersSection";
+import { PRACTISE_LINK } from "@/app/data/links";
+import { track } from "@vercel/analytics";
 
 export const metadata = {
   title: "Practise | Singapore Economics League",
@@ -15,15 +18,26 @@ export default function PractisePage() {
 
         {/* Header */}
         <H1>
-          Practise 
+          Practise
         </H1>
-        <Button
-          href="/syllabus"
-          target="_self"
-          className="mx-auto md:mx-0 block mt-12"
-        >
-          View the Syllabus
-        </Button>
+        <div className="flex flex-wrap gap-3 mt-6">
+          <Button
+            variant="secondary"
+            href={PRACTISE_LINK}
+            trackingEvent="practise_period_website_visit"
+            className="mx-auto md:mx-0 block mt-12"
+          >
+            Visit the practice website &rarr;
+          </Button>
+          <Button
+            href="/syllabus"
+            target="_self"
+            className="mx-auto md:mx-0 block mt-12"
+          >
+            View the Syllabus
+          </Button>
+        </div>
+
 
         {/* Sample Questions */}
         <SampleQuestionsSection />

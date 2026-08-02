@@ -1,7 +1,10 @@
+"use client"
+
 import Image from "next/image";
 import { H2L } from "../Headers";
 import Button from "../Button";
-
+import { PRACTISE_LINK } from "@/app/data/links";
+import { track } from "@vercel/analytics"
 export default function PractisePeriodSection() {
   return <section className="w-full bg-[#fbfafb] py-4 md:py-16">
     <div className="max-w-screen-lg mx-auto px-4 md:px-0">
@@ -23,15 +26,18 @@ export default function PractisePeriodSection() {
           </H2L>
           <p className="text-gray-700 text-lg">
             Wonder what the competition will feel like?
-            <br /> Our revamped competition website will be available <b>a week</b> before the competition starts, giving you and your team time to practise and get a feel for how the experience unfolds.
+            <br /> Our revamped competition website is now available! Practise through the site and get a feel for how the experience unfolds together with you team!
           </p>
           <div className="flex flex-wrap gap-3 mt-6">
             <Button
               variant="secondary"
-
-              className="mx-auto md:mx-0 opacity-50"
+              href={PRACTISE_LINK}
+              onClick={() => {
+                track("practise_period_website_visit")
+              }}
+              className="mx-auto md:mx-0 "
             >
-              Visit the website soon &rarr;
+              Visit the website &rarr;
             </Button>
           </div>
           

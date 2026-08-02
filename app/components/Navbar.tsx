@@ -7,7 +7,7 @@ import { twMerge } from "tailwind-merge";
 import MenuIcon from "./icons/MenuIcon";
 import CrossIcon from "./icons/CrossIcon";
 import navigationPages from "../data/navigationPages";
-import { REGISTRATION_LINK } from "../data/links";
+import { PRACTISE_LINK, REGISTRATION_LINK } from "../data/links";
 import { track } from '@vercel/analytics';
 
 
@@ -40,7 +40,7 @@ export default function Navbar() {
             linear-gradient(to_right,#ddd_1px,transparent_1px)]
       "
     >
-      <nav className="w-full md:max-w-screen-lg md:mx-auto py-2 flex items-center justify-between px-4 md:px-0">
+      <nav className="w-full md:max-w-screen-xl md:mx-auto py-2 flex items-center justify-between px-4 md:px-0">
         <Link href="/" aria-label="Go to Home" className="flex items-center">
           <Image src="/logos/navbar.png" alt="Logo" width={240} height={192} />
         </Link>
@@ -50,9 +50,17 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
-          <Button href={REGISTRATION_LINK} 
-          onClick={()=>{track("register")}}
-          className="ml-2">
+          <Button
+            variant="secondary"
+            href={PRACTISE_LINK}
+            trackingEvent="practise_period_website_visit"
+            className="ml-2"
+          >
+            Practise
+          </Button>
+          <Button href={REGISTRATION_LINK}
+            onClick={() => { track("register") }}
+            className="ml-2">
             Register Now!
           </Button>
         </div>
@@ -87,12 +95,22 @@ export default function Navbar() {
               {name}
             </NavbarItem>
           ))}
+          <Button
+            variant="secondary"
+            href={PRACTISE_LINK}
+            trackingEvent="practise_period_website_visit"
+            className="w-full mt-4"
+          >
+            Practise
+          </Button>
           <Button href={REGISTRATION_LINK} onClick={() => {
             setIsOpen(false)
-            track("register")  
+            track("register")
           }} className="w-full mt-4">
             Register Now!
           </Button>
+
+          
 
         </div>
       </div>
