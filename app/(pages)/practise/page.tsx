@@ -5,7 +5,6 @@ import Button from "@/app/components/Button";
 import SampleQuestionsSection from "@/app/components/practise/SampleQuestionsSection";
 import PastYearPapersSection from "@/app/components/practise/PastYearPapersSection";
 import { PRACTISE_LINK } from "@/app/data/links";
-import { track } from "@vercel/analytics";
 
 export const metadata = {
   title: "Practise | Singapore Economics League",
