@@ -15,7 +15,7 @@ export default function SyllabusPage() {
       <div className="max-w-screen-lg mx-auto mt-16 px-4 md:px-0">
         <H2 className="mb-2">Content</H2>
         <p className="mb-4">
-          The content tested in SEL can be classified according to 5 broad
+          The content tested in SEL can be classified according to 4 broad
           topics, namely:
         </p>
         <ul className="list-disc list-inside mb-6 space-y-1 ml-4">
