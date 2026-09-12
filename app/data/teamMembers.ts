@@ -122,8 +122,8 @@ const teamMembers: TeamMember[] = [
   {
     "name": "Clement Chua",
     "role": "Academics Consultant",
-    "photo": null,
-    "socials": "clement-chua.jpeg",
+    "photo": "clement-chua.jpeg",
+    "socials": "https://www.linkedin.com/in/clement-chua-b1a281355?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     "quote": null
   }
 ]
