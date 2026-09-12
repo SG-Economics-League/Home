@@ -118,6 +118,13 @@ const teamMembers: TeamMember[] = [
     "photo": "chua-zhong-ding.png",
     "socials": "https://www.linkedin.com/in/chua-zhong-ding-94412728b/",
     "quote": "unpaid intern"
+  },
+  {
+    "name": "Clement Chua",
+    "role": "Academics Consultant",
+    "photo": null,
+    "socials": "clement-chua.jpeg",
+    "quote": null
   }
 ]
 
